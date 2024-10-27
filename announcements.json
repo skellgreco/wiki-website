@@ -1,0 +1,15 @@
+{
+  "pinned": [],
+  "important": [
+    {
+      "id": "e5ff9cf2-496f-42c0-ae57-7ebdfbc89d01",
+      "title": "Test Announcement",
+      "content": "This is a Test Announcement With Test Content!\n\nSupports formatting:\n# 1\n## 2\n### 3\n`code`\n> Quote\n** Bold **\n* Italic*\n",
+      "date": "2024-10-27T07:50:35.704Z"
+    }
+  ],
+  "tutorials": [],
+  "updates": [],
+  "issues": [],
+  "other": []
+}
