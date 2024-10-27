@@ -2,7 +2,6 @@
 📚 A Simple Wiki Website for Devastate Roleplay
 
 ![Website Scrennshot](https://i.ibb.co/0QvyqFW/forum.png)
-![Node Version](https://img.shields.io/badge/node-%3E%3D14.0.0-brightgreen)
 
 ## Features
 - **Admin Edit Console**: Quick access for administrators to edit or delete announcements without the need of a login/register system.
@@ -30,3 +29,4 @@ This project uses Express.js along with HTML, CSS, and JavaScript. To run it on 
 4. The 2FA Password is secure and stored on the backend. However, **note that the Admin Password is not encrypted and serves as a basic secondary security measure.**
 
 ### 🧡 Made by Skell! Please do not redistribute without permission! You can contact me on Discord `skellgreco` to aquire permission! Thanks!
+![Node Version](https://img.shields.io/badge/node-%3E%3D14.0.0-brightgreen)
