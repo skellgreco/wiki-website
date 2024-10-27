@@ -398,4 +398,3 @@ function clearSearch() {
     loadAnnouncements(); // Reload all announcements
 }
 
-// Existing functions like fetchAnnouncements, loadAnnouncements, etc.
