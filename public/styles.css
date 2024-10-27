@@ -1,0 +1,489 @@
+/* General Body Styles */
+body {
+    background: radial-gradient(circle at 3% 30%, #ff0000, transparent 40%), /* Red glow */
+                radial-gradient(circle at 100% 90%, #3700ff, transparent 50%), /* Red glow */
+                
+                #0b0b0b; /* Dark base color */
+    background-blend-mode:soft-light;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    
+    backdrop-filter: blur(10px); /* Blurred effect */
+}
+
+code {
+    background-color: #000000;
+}
+
+/* Blockquote Styles */
+blockquote {
+    border-left: 4px solid #ffffff; /* White line similar to Discord quotes */
+    padding: 10px 20px; /* Space around the text */
+    margin: 10px 0; /* Space above and below */
+    background-color: rgba(0, 0, 0, 0.1); /* Slightly darker background for contrast */
+    color: #e0e0e0; /* Text color */
+    margin-bottom: 1px;
+    line-height: 1;
+    position: relative;
+}
+
+
+
+blockquote p {
+    margin: 0; /* Remove margin for paragraphs inside blockquote */
+}
+
+
+h4, h5, h6 {
+    margin-top: 3px; /* Reduce space above headers */
+    margin-bottom: 0px; /* Reduce space below headers */
+    line-height: 1.3rem; /* Adjust the line height for better spacing */
+}
+
+h1 {
+    margin-top: 3px; /* Reduce space above headers */
+    margin-bottom: 0px; /* Reduce space below headers */
+    line-height: 1.0rem; /* Adjust the line height for better spacing */
+
+}
+
+
+h3 {
+    margin-bottom: -13px;
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header Styles */
+header h1 {
+    text-align: center;
+    border-bottom: 1px solid #333;
+    color: #fff;
+}
+
+/* Section Headers */
+h2 {
+    margin-top: 8px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    color: #fefefc;
+}
+
+/* Announcement Section Styles */
+.announcement-section {
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 15px;
+    
+    /* Subtle gradient border with slight glow effect */
+    border: 1px solid #121212;
+    background: radial-gradient(circle at 3% 30%, rgba(111, 0, 0, 0.6), transparent 40%), /* Subtle red glow */
+                radial-gradient(circle at 100% 90%, rgba(13, 0, 110, 0.6), transparent 40%), /* Subtle blue/purple glow */
+                rgb(7, 7, 7); /* Dark base color */
+    background-blend-mode: soft-light;
+    
+    /* Subtle shadow for depth */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Very soft shadow */
+}
+
+
+/* Announcement Styles */
+.announcement {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: rgba(23, 22, 22, 0.8); /* Slightly transparent background */
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+
+.announcement h3 {
+    color: #ffffff;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.announcement p {
+    margin: 5px 0 0 0;
+    font-size: 1.7em;
+    line-height: 29px;
+    white-space: pre-wrap;
+}
+
+/* Buttons */
+/* Buttons */
+.announcement button {
+    background-color: #f04c0c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;  /* Initially hidden */
+    position: relative; /* Adjust positioning */
+    margin-left: 5px; /* Add space between buttons */
+}
+
+.show-more-button, .show-more-content-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.show-more-button:hover, .show-more-content-button:hover {
+    background-color: #0056b3;
+}
+
+/* Edit Button */
+.announcement .edit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;  /* Initially hidden */
+    position: absolute;
+    top: 10px;
+    right: 80px; /* Adjust positioning to avoid overlap with delete button */
+}
+
+/* Delete Button */
+.announcement .delete-button {
+    background-color: #f04c0c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;  /* Initially hidden */
+    position: absolute;
+    top: 10px;
+    right: 10px; /* Position delete button */
+}
+
+/* Date Display */
+.announcement-date {
+    display: block;
+    margin-top: 5px;
+    color: #ffc400;
+    font-size: 0.8em;
+}
+
+
+/* Admin Form Styles */
+#admin-form {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+
+#admin-form input, #admin-form textarea, #admin-form select, #admin-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #555;
+    background-color: #222;
+    color: #e0e0e0;
+    border-radius: 5px;
+}
+
+#admin-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#admin-form button:hover {
+    background-color: #0056b3;
+}
+
+#close-admin-form {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#close-admin-form:hover {
+    background-color: #cc0000;
+}
+
+/* Important Pinned Section Styles */
+.important-pinned {
+    background-color: #ff3700; /* Red background for important announcement */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    display: none; /* Hidden initially */
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Allows for absolute positioning of child elements */
+    min-height: 100px; /* Ensure footer has enough height */
+}
+
+/* Credit Bar Styles */
+.credit-bar {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: #000000;
+    padding: 10px 0;
+    border-top: 1px solid #000000;
+}
+
+.credit-bar p {
+    margin: 0;
+    font-size: 10px; /* Font size for copyright text */
+    color: #e0e0e0; /* Text color for copyright text */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Allows for absolute positioning of child elements */
+    min-height: 100px; /* Ensure footer has enough height */
+}
+
+/* Footer Info Styles */
+.footer-info {
+    position: absolute;
+    left: 20px; /* Space from the left edge */
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    font-size: 100%; /* Font size for company name */
+    font-weight: bold;
+    color: #fff; /* Text color for company name */
+}
+
+.footer-logo {
+    height: 40px; /* Adjust height as needed */
+    margin-right: 10px; /* Space between the logo and the text */
+}
+
+/* Footer Buttons Styles */
+.footer-buttons {
+    position: absolute;
+    right: 20px; /* Space from the right edge */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #000000; /* Background color for buttons */
+    color: #fff; /* Text color for buttons */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px; /* Font size for button text */
+    transition: background-color 0.3s;
+}
+
+.footer-button:hover {
+    background-color: #ff0d00; /* Hover background color */
+}
+
+.footer-button:active {
+    background-color: #004094; /* Active background color */
+}
+
+/* Credit Bar Styles */
+.credit-bar {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: #000000;
+    padding: 10px 0;
+    border-top: 1px solid #000000;
+}
+
+.credit-bar p {
+    margin: 0;
+    font-size: 10px; /* Font size for copyright text */
+    color: #e0e0e0; /* Text color for copyright text */
+}
+
+
+/* Centered Announcement Container */
+.announcement-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full screen height */
+
+}
+
+.announcement-box {
+    background-color: rgba(177, 155, 155, 0.148);
+    backdrop-filter: blur(75px);
+    padding: 30px;
+    border-radius: 25px;
+    width: 60%; /* Width of the square */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Soft shadow */
+    text-align: left; /* Centered text */
+    width: 90%;
+}
+
+#announcement-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.separator-line {
+    border: 0;
+    height: 2px;
+    background: #ffffff; /* White line */
+    margin: 20px 0; /* Spacing above and below */
+}
+
+#announcement-content {
+    font-size: 0.9rem;
+    color: #e0e0e0;
+    line-height: 1.19rem;
+}
+
+#announcement-date {
+    display: block;
+    margin-top: 15px;
+    color: #ffc400; /* Yellow date */
+    font-size: 1rem;
+}
+
+/* Sticky Go Back Button */
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s; /* Smooth transition */
+    z-index: 5;
+}
+
+.back-button:hover {
+    background-color: #ff009d; /* Darker blue on hover */
+}
+
+.back-button:active {
+    background-color: #6a0000; /* Red when clicked */
+}
+
+/* Add this to your CSS */
+#drop-area {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#drop-area p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+    padding: 0 10px; /* Added padding for better mobile spacing */
+}
+
+#search-input {
+    width: 100%; /* Full width on smaller screens */
+    max-width: 500px; /* Limits the width on larger screens */
+    padding: 10px;
+    font-size: 16px;
+    background-color: #121212;
+    color: #ffffff;
+    border-radius: 10px;
+    border: none; /* Removes the border */
+    outline: none; /* Removes the focus outline */
+    box-shadow: none; /* Removes any box shadow */
+    box-sizing: border-box; /* Ensures padding doesn't exceed the container width */
+}
+
+#clear-search {
+    width: 100%; /* Full width on smaller screens */
+    max-width: 200px; /* Limits the width on larger screens */
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-top: 10px; /* Space between input and button on mobile */
+    background-color: #121212;
+    color: #ffffff;
+    border-radius: 10px;
+    border: none; /* Removes the border */
+    outline: none; /* Removes the focus outline */
+    box-shadow: none; /* Removes any box shadow */
+    box-sizing: border-box; /* Ensures padding doesn't exceed the container width */
+}
+
+/* Specific Mobile Styles */
+@media (max-width: 768px) {
+    #search-input, #clear-search {
+        font-size: 14px; /* Adjusts font size for smaller screens */
+        padding: 8px; /* Slightly reduces padding on smaller screens */
+        width: 90%; /* Reduced width to ensure good spacing */
+        margin: 5px auto; /* Centers the elements and adds margin for spacing */
+    }
+
+    #clear-search {
+        margin-left: 0; /* Removes left margin on mobile for better alignment */
+        margin-top: 10px; /* Adds space between input and button on mobile */
+    }
+}
