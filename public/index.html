@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devastate Forum</title>
+    <link rel="icon" type="image/x-icon" href="/images/λογκοπουλος.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <center>
+        <img src="./images/λογκοπουλος.png" width="250" height="250" alt="Λογκοπουλος Logo" onclick="window.location.href='index.html'"> 
+    </center>
+
+
+    <!-- Add the search bar here -->
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search..." onkeyup="searchAnnouncements()">
+        <button id="clear-search" onclick="clearSearch()">Clear</button>
+    </div>
+
+    <div class="container">
+        <div id="pinned" class="announcement-section important-pinned">
+            <h2>Very Important Announcement</h2>
+        </div>
+
+        <div id="important" class="announcement-section">
+            <h2>Pinned Announcements</h2>
+            <button id="show-more-important" class="show-more-button">+ Show More</button>
+        </div>
+
+        <div id="tutorials" class="announcement-section">
+            <h2>Tutorials</h2>
+            <button id="show-more-tutorials" class="show-more-button">+ Show More</button>
+        </div>
+
+        <div id="updates" class="announcement-section">
+            <h2>Updates</h2>
+            <button id="show-more-updates" class="show-more-button">+ Show More</button>
+        </div>
+
+        <div id="issues" class="announcement-section">
+            <h2>Issues</h2>
+            <button id="show-more-issues" class="show-more-button">+ Show More</button>
+        </div>
+
+        <div id="other" class="announcement-section">
+            <h2>Other</h2>
+            <button id="show-more-other" class="show-more-button">+ Show More</button>
+        </div>
+
+        <div id="admin-form" class="hidden">
+            <button id="close-admin-form">Close</button>
+            <h2>Create or Edit Announcement</h2>
+            <input type="password" id="admin-password" placeholder="Enter Admin Password" required>
+            <input type="text" id="announcement-title" placeholder="Title" required>
+            <textarea id="announcement-content" placeholder="Content" rows="10" required></textarea>
+
+            <!-- Add this to your admin form in HTML -->
+            <div id="drop-area">
+                <p>Drag and drop an image file here or click to select one.</p>
+                <input type="file" id="fileInput" accept="image/*" style="display: none;">
+            </div>
+
+
+      
+
+            <select id="announcement-category">
+                <option value="pinned">Pinned</option>
+                <option value="important">Important</option>
+                <option value="tutorials">Tutorial</option>
+                <option value="updates">Updates</option>
+                <option value="issues">Issues</option>
+                <option value="other">Other</option>
+            </select>
+            <button onclick="postAnnouncement()">Post Announcement</button>
+            <input type="hidden" id="edit-index">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-info">
+            <img src="/images/λογκοπουλος.png" alt="Λογκοπουλος Logo" class="footer-logo">
+            <p>Devastate Roleplay</p>
+        </div>
+        <div class="footer-buttons">
+            <a href="https://devastateroleplay.xyz" class="footer-button">Home</a>
+            <a href="https://discord.gg/devastaterp" class="footer-button" target="_blank">Discord</a>
+        </div>
+        <div class="credit-bar">
+            <p>Made by Skell. Distributed under the GNU General Public License v3.0</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
