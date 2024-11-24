@@ -1,5 +1,5 @@
 # Wiki Website
-📚 A Simple Wiki Website for Devastate Roleplay
+📚 A Simple Wiki Website for Devastate Roleplay. This repo is an archive no longer maintained by the Developer.
 
 ![Website Scrennshot](https://i.ibb.co/0QvyqFW/forum.png)
 
